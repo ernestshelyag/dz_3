@@ -1,0 +1,52 @@
+{
+  "name": "gulp_template_2.0",
+  "version": "1.0.0",
+  "description": "dz_3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ernestshelyag/dz_3.git"
+  },
+  "author": "eric",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ernestshelyag/dz_3/issues"
+  },
+  "homepage": "https://github.com/ernestshelyag/dz_3#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.3.3",
+    "browser-sync": "^2.14.0",
+    "css-mqpacker": "^6.0.2",
+    "del": "^3.0.0",
+    "eslint": "^4.18.2",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-clean-css": "^3.7.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^6.2.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0",
+    "gulp-useref": "^3.1.2",
+    "lost": "^7.1.0",
+    "postcss-csso": "^2.0.0",
+    "vinyl-ftp": "^0.6.0"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "npm": "^5.7.1",
+    "pug": "^2.0.1"
+  }
+}
