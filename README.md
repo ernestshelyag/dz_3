@@ -1,15 +1,12 @@
 #Quick start
 
 * Install plugins `npm i`
-* Install libs `bower i`
-* Launch `gulp` to run watchers, server and compilers
-* Launch `gulp build` build for production (public)
-* Launch `nodemon server` to start server
+* Launch `gulp` to work with frontend
+* Launch `nodemon server` to work with backend
 
 #### I assume you have global pre-installed
 
 * node.js
 * npm
 * gulp 4.0
-* bower
 * nodemon

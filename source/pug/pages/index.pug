@@ -1,0 +1,26 @@
+extends ../template
+
+block content
+
+    +b.DIV.main
+
+        +e.H1.title.title Main page
+
+        +e.A.link.link(href='/about') about
+        +e.A.link.link(href='/contacts') contacts
+
+        +e.H1.title.title Загрузить картинку
+
+        if(msg)
+            .msg= msg
+
+        +b.FORM.form.main__form(action='/', method='post' enctype='multipart/form-data')
+            +e.INPUT.input(type='text' placeholder='Описание' name='name')
+            +e.LABEL.label(for='file')
+            +e.INPUT.input#file(type='file', name='photo')
+            +e.BUTTON.button(type='submit') Загрузить файл
+
+        if(pic)
+            each item, index in pic
+                img.pic(src=`${item}`, alt='')
+                .pic-text= index

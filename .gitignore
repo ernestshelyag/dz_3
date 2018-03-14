@@ -42,8 +42,6 @@ npm-debug.log
 
 # - - - - -
 
-front/app
-front/libs
-front/source/statics
-
-back/public
+app
+source/statics
+public
