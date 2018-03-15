@@ -2,6 +2,7 @@
 const express = require('express');
 const app = express();
 const path = require('path');
+const bodyParser = require('body-parser');
 const port = 3000;
 
 // view setup
@@ -9,9 +10,12 @@ const port = 3000;
 app.set('views', path.join(__dirname, 'source/pug'));
 app.set('view engine', 'pug');
 
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: false}));
+
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', require('./routes/index'));
+app.use('/', require('./controllers/routes'));
 
 // errors
 

@@ -1,16 +1,16 @@
 const formidable = require('formidable');
 const fs = require('fs');
 const path = require('path');
-const db = require('../models/db')();
+const db = require('../dataBase/db')();
 
-module.exports.getIndex = function (req, res, next) {
+module.exports.getIndex = function (req, res) {
   res.render('pages/index', {
     title: 'Main',
     msg: req.query.msg,
     pic: db.stores.file.store});
 };
 
-module.exports.sendData = function (req, res, next) {
+module.exports.sendIndex = function (req, res, next) {
   let form = new formidable.IncomingForm();
   let upload = path.join('./public', 'upload');
   let fileName;
