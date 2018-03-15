@@ -36,7 +36,7 @@ $.pathTask.tasks.forEach(function (e) {
 });
 
 $.gulp.task('default', $.gulp.series(
-  'cleanApp'
+  'cleanApp',
   // 'cleanPublic',
   $.gulp.parallel(
     'sass',
